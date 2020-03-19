@@ -1,0 +1,17 @@
+size=int(input())
+arr=list(map(int,input().split()))
+min=arr[0]
+missing=min^arr[0]
+for i in range(1,size-1):
+    if(min>arr[i]):
+        min=arr[i]
+
+min+=1
+for i in range(1,size-1):
+    missing^=arr[i]^(min)
+    min+=1
+    if(missing==0):
+        continue
+    else:
+       print(min-1)
+       break
