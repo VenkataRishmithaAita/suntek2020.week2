@@ -1,0 +1,23 @@
+def frequencyofk(arr,k):
+    count=0
+    if len(arr)==1 and arr[0]==k:
+        return 1
+    elif len(arr)==1 and arr[0]!=k:
+        return -1
+    else:
+        for i in arr:
+            if i==k:
+               count+=1
+        if count==0:
+            return -1
+        else:
+            return count
+
+size=int(input())
+arr=list(map(int,input().split()))
+k=int(input())
+print(frequencyofk(arr,k))
+
+
+
+            
