@@ -1,0 +1,14 @@
+Testcase1:
+n:24
+k:10
+output:0
+__________
+Testcase2:
+n:22
+k:22
+output:1
+__________
+Testcase3:
+n:10
+k:512
+output:1
