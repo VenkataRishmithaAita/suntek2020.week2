@@ -1,0 +1,14 @@
+Testcase1:
+arr:6 1 2 5
+K:2
+output:True
+_______________
+Testcase2:
+arr:6 1 3 2 5
+K:2
+Output:False
+_______________
+Testcase3:
+arr:1 4 2 3 5
+K:3
+Output:True
