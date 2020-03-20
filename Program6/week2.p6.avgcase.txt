@@ -1,0 +1,11 @@
+size1=int(input())
+arr1=list(map(int,input().split()))
+size2=int(input())
+arr2=list(map(int,input().split()))
+mergedarr=arr1+arr2
+mergedarr.sort()
+if(len(mergedarr)%2!=0):
+    median=mergedarr[int(len(mergedarr)-1)//2]
+else:
+    median=float((mergedarr[len(mergedarr)//2]+mergedarr[(len(mergedarr)//2)-1])/2)
+print(median)
