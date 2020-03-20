@@ -1,0 +1,11 @@
+testcase1:
+arr1:1 4 5 8 10
+arr2:6 9 15
+arr3:2 3 6 6
+output:1
+_________________
+testcase2:
+arr1:5 8 10 15
+arr2:6 9 15 78 89
+arr3:2 3 6 6 8 8 10
+output:1
