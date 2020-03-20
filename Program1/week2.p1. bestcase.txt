@@ -1,0 +1,14 @@
+def printparenthesis(n):
+    validparan(n//2,n//2,"")
+def validparan(openp,closep,string):
+    if(openp==0 and closep==0):
+        print(string)
+    if(openp>closep):
+        return
+    if(openp>0):
+        validparan(openp-1,closep,string+"(")
+    if(closep>0):
+        validparan(openp,closep-1,string+")")
+
+n=int(input())
+printparenthesis(n)
